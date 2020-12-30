@@ -1,0 +1,539 @@
+@charset "utf-8";
+
+/* リセットcss */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* 以下にCSSを記述 */
+
+header {
+  height: 70px;
+  background: #000;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: auto;
+  margin-left: 35px;
+  margin-bottom: auto;
+  color: #fff;
+  line-height: 70px;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.header-nav a {
+  color: #f2f2f2;
+}
+
+#cover {
+  height: 600px;
+  background: url(../img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#cover .eyecatch {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  font-style: italic;
+  font-family: Times New Roman, "ＭＳ Ｐゴシック";
+  font-weight: bold;
+  color: #ccc;
+  line-height: 1;
+}
+
+.news {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.news-infomation {
+  position: absolute;
+  right: 100px;
+  width: 600px;
+  font-size: 0.5em;
+  bottom: 0;
+  background: #ccc;
+  height: 40px;
+  line-height: 150%;
+}
+
+.news-logo {
+	position: absolute;
+	bottom: 0;
+	width: 100px;
+  height: 40px;
+  color: #ccc;
+  font-size: 0.5em;
+	background: black !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.concept-back {
+  position: relative;
+  height: 800px;
+  background: black;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.concept-title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.concept-detail {
+  margin-top: 100px;
+  width:1000px;
+}
+
+.link {
+  width: 200px;
+  height: 50px;
+  margin-top: 100px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  z-index: 9999;
+}
+
+.link a{
+  text-decoration: none;
+  color: black;
+}
+
+.concept-img img{
+  position: absolute;
+  top: 300px;
+}
+
+#service {
+  position: relative;
+  height: 1800px;
+  background:#e8e9eb;
+  margin-bottom: 200px;
+}
+
+.service-title {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 150%;
+}
+
+.service-img img{
+  position: absolute;
+  top:40px;
+  right:0px;
+  margin-left: auto;
+}
+
+.service-section {
+  position: absolute;
+  top: 180px;
+  right: 800px;
+  width: 700px;
+  height: 300px;
+  background: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-subtitle {
+  margin-left: 30px;
+  font-weight: bold;
+}
+
+.service-detail {
+  margin-left: 30px;
+  margin-top: 20px;
+  width: 600px;
+}
+
+.service-bottun {
+  margin-top: 30px;
+  width: 600px;
+  text-align: right;
+}
+
+.service-bottun span{
+  font-size: 0.7em;
+  border: 2px solid;
+  padding: 5px 5px;
+}
+
+.service-second-img img{
+  position: absolute;
+  top:1000px;
+}
+
+.service-second-section {
+  position: absolute;
+  top: 1200px;
+  right: 400px;
+  width: 700px;
+  height: 300px;
+  background: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-image {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-content {
+  position: absolute;
+  color: white;
+  top: 200px;
+  left: 350px;
+  width: 900;
+  height: 400;
+}
+
+.company-recruit {
+  position: absolute;
+  color: white;
+  top: 200px;
+  right: 400px; 
+  width: 900;
+  height: 400;
+}
+
+.company-font {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.company-detail {
+  text-align: center;
+}
+
+.faq-content {
+  position: relative;
+  height: 600px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-frame {
+  position: absolute;
+  background-color: black;
+  height: 200px;
+  width: 1300px;
+  display:flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.faq-title {
+  color: white;
+  display: flex;
+}
+
+.left-column {
+  font-size: 2em;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.center-column {
+  line-height: 2em;
+  width: 1150px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.center-column a{
+  text-decoration: none;
+  color: white;
+}
+
+#contact {
+  height: 600px;
+  background: url(../img/contact-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contact p{
+  color: white;
+}
+
+.contact-title {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.contact-subtitle {
+  margin-top: 0.5em;
+  font-weight: bold;
+}
+
+.contact-content {
+  margin-top: 1em;
+  font-size: 2em;
+}
+
+.contact-detail {
+  margin-top: 2em;
+  font-size: 1em;
+}
+
+.contact-form {
+  margin-top: 2em;
+  font-size: 1em;
+  border: 2px solid;
+  border-color: white;
+  padding: 10px 10px;
+  font-size: 0.8em;
+}
+
+footer {
+  height: 90px;
+  background: #000;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: auto;
+  margin-left: 35px;
+  margin-bottom: auto;
+  color: #fff;
+  line-height: 70px;
+}
+
+.footer-nav ul {
+  display: flex;
+}
+
+.footer-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.footer-nav a {
+  color: #f2f2f2;
+}
+
+.footer-message {
+  color: white;
+  text-align: center;
+  
+}
