@@ -298,6 +298,7 @@ ul {
 .concept-img img{
   position: absolute;
   top: 300px;
+  right: 300px;
 }
 
 #service {
